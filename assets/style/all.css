@@ -10847,22 +10847,22 @@ body a {
 }
 
 .index_content5 .info_bg1::before {
-  background: url("/assets/images/info01.jpg") no-repeat center;
+  background: url("../images/info01.jpg") no-repeat center;
   background-size: cover;
 }
 
 .index_content5 .info_bg2::before {
-  background: url("/assets/images/info02.jpg") no-repeat center;
+  background: url("../images/info02.jpg") no-repeat center;
   background-size: cover;
 }
 
 .index_content5 .info_bg3::before {
-  background: url("/assets/images/info03.jpg") no-repeat center;
+  background: url("../images/info03.jpg") no-repeat center;
   background-size: cover;
 }
 
 .index_content5 .info_bg4::before {
-  background: url("/assets/images/info04.jpg") no-repeat center;
+  background: url("../images/info04.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -10938,7 +10938,7 @@ body a {
 
 .index_content7 {
   padding: 80px 0;
-  background: url("/assets/images/bg_share.jpg") no-repeat center;
+  background: url("../images/bg_share.jpg") no-repeat center;
   background-size: cover;
 }
 
