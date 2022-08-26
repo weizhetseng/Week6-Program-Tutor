@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" />
+  <title>
+    <%- title %>
+  </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-black1 sticky-top">
+    <div class="container-fluid py-4">
+      <h1><a href="index.html">Coding Home</a></h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="ham material-icons">
+          menu
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex gap-5">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="index.html">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="intro.html">課程介紹</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white d-flex align-items-center" href="#" data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"><span class="material-icons">
+                account_circle
+              </span>登入</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="container modal-content bg-black1 text-white pt-4 pb-5 position-relative">
+        <button type="button" class="btn-close btn-close-white position-absolute end-0 translate-middle" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <h5 class="modal-title text-center fs-4 fw-bold" id="staticBackdropLabel">登入</h5>
+          <div class="modal-body">
+            <form action="" class="d-flex flex-column mb-5">
+              <label class="mb-2" for="">信箱</label>
+              <input class="mb-4 px-3 py-2 bg-black2 border rounded" type="text" placeholder="請輸入信箱">
+              <label class="mb-2" for="">密碼</label>
+              <input class="mb-4 px-3 py-2 bg-black2 border rounded" type="text" placeholder="請輸入密碼">
+              <input class="submit py-2 border-0 rounded text-white" type="submit" name="" id="" value="登入">
+            </form>
+            <div class="d-flex flex-column text-center align-items-center">
+
+              <p class="mb-3 bg-black1">其他登入方式</p>
+              <a class="btn btn-outline-light py-2 mb-4" href="">
+                <img src="./assets/images/icon_fb.svg" alt="">
+                Facebook 登入
+              </a>
+              <a class="btn btn-outline-light py-2" href="">
+                <img src="./assets/images/icon_google.svg" alt="">
+                Google 登入
+              </a>
+            </div>
+
+          </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <%- contents %>
+
+    <footer class="footer bg-black1">
+      <p class="p-4 text-gray text-center">Coding Home © 2022 All Rights Reserved</p>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

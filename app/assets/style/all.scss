@@ -1,0 +1,16 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import './base/reset';
+
+
+@import './base/basic';
+@import './helpers/customer';
+@import './base/mixin';
+@import './layout/layout.scss';
+@import './page/index_content';
+@import './page/intro';
+@import './page/detail';
+@import './page/pay';
+@import './page/credit';
+@import './page/success'
