@@ -50,17 +50,17 @@
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="container modal-content bg-black1 text-white pt-4 pb-5 position-relative">
+      <div class="container modal-content bg-black1 text-white pt-4 pb-5 position-relative  border border-light">
         <button type="button" class="btn-close btn-close-white position-absolute end-0 translate-middle" data-bs-dismiss="modal" aria-label="Close"></button>
         <div class="row justify-content-center">
           <div class="col-md-8">
             <h5 class="modal-title text-center fs-4 fw-bold" id="staticBackdropLabel">登入</h5>
           <div class="modal-body">
             <form action="" class="d-flex flex-column mb-5">
-              <label class="mb-2" for="">信箱</label>
-              <input class="mb-4 px-3 py-2 bg-black2 border rounded" type="text" placeholder="請輸入信箱">
-              <label class="mb-2" for="">密碼</label>
-              <input class="mb-4 px-3 py-2 bg-black2 border rounded" type="text" placeholder="請輸入密碼">
+              <label class="mb-2" for="email">信箱</label>
+              <input class="mb-4 px-3 py-2 bg-black2 border rounded" id="email" type="text" placeholder="請輸入信箱">
+              <label class="mb-2" for="password">密碼</label>
+              <input class="mb-4 px-3 py-2 bg-black2 border rounded" id="password" type="text" placeholder="請輸入密碼">
               <input class="submit py-2 border-0 rounded text-white" type="submit" name="" id="" value="登入">
             </form>
             <div class="d-flex flex-column text-center align-items-center">
@@ -99,14 +99,22 @@
                         </div>
                         <li class="progress_circle">
                             <div class="active d-flex flex-column align-items-center">
-                                <p class="circle">1</p>
+                                <p class="circle">
+                                    <span class="material-icons fs-6">
+                                        done
+                                        </span>
+                                </p>
                                 <p>課程報名</p>
                             </div>
 
                         </li>
                         <li class="progress_circle2">
                             <div class="active d-flex flex-column align-items-center">
-                                <p class="circle">2</p>
+                                <p class="circle">
+                                    <span class="material-icons fs-6">
+                                        done
+                                        </span>
+                                </p>
                                 <p>信用卡付款</p>
                             </div>
 
@@ -129,7 +137,7 @@
             <div class="row justify-content-center">
                 <div class="success_text col-xl-4 bg-black1 text-white d-flex flex-column align-items-center">
                     <div class="d-flex gap-3 justify-content-center mb-5">
-                        <span class="material-icons-outlined fs-1">
+                        <span class="material-icons-outlined fs-1 text-c-green">
                             verified
                             </span>
                             <h2 class="fs-4">完成訂購</h2>

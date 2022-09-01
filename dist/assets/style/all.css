@@ -10460,6 +10460,10 @@ body a {
   font-size: 48px;
 }
 
+.text-c-green {
+  color: #62DB54;
+}
+
 .navbar {
   border-bottom: 2px solid;
   -o-border-image: linear-gradient(to right, #62DB54 50%, #09ACF5 50%);
@@ -10847,22 +10851,22 @@ body a {
 }
 
 .index_content5 .info_bg1::before {
-  background: url("/assets/images/info01.jpg") no-repeat center;
+  background: url("../images/info01.jpg") no-repeat center;
   background-size: cover;
 }
 
 .index_content5 .info_bg2::before {
-  background: url("/assets/images/info02.jpg") no-repeat center;
+  background: url("../images/info02.jpg") no-repeat center;
   background-size: cover;
 }
 
 .index_content5 .info_bg3::before {
-  background: url("/assets/images/info03.jpg") no-repeat center;
+  background: url("../images/info03.jpg") no-repeat center;
   background-size: cover;
 }
 
 .index_content5 .info_bg4::before {
-  background: url("/assets/images/info04.jpg") no-repeat center;
+  background: url("../images/info04.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -10938,7 +10942,7 @@ body a {
 
 .index_content7 {
   padding: 80px 0;
-  background: url("/assets/images/bg_share.jpg") no-repeat center;
+  background: url("../images/bg_share.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -11177,6 +11181,14 @@ body a {
   height: 100px;
 }
 
+@media (max-width: 576px) {
+  .detail_content {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
 .teacher {
   padding: 32px;
   border-radius: 24px;
@@ -11189,6 +11201,12 @@ body a {
 .teacher .teacher_intro {
   padding-bottom: 32px;
   margin-bottom: 32px;
+}
+
+@media (max-width: 576px) {
+  .teacher .teacher_intro {
+    flex-direction: column;
+  }
 }
 
 .class_detail {
@@ -11298,6 +11316,11 @@ body a {
   padding-bottom: 114px;
 }
 
+.box {
+  margin-right: -50px;
+  z-index: 2;
+}
+
 .box .pay_left {
   padding: 48px 32px;
   position: relative;
@@ -11321,7 +11344,16 @@ body a {
   transform: translateY(-50%);
 }
 
+@media (max-width: 1200px) {
+  .box {
+    margin: 0;
+  }
+}
+
 @media (max-width: 768px) {
+  .box .pay_left {
+    position: relative;
+  }
   .box .pay_left::after {
     content: '';
     display: block;

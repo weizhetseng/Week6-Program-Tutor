@@ -55,7 +55,8 @@
 }
 
 .box {
-
+    margin-right: -50px;
+    z-index: 2;
     .pay_left {
         padding: 48px 32px;
         position: relative;
@@ -78,8 +79,12 @@
             transform: translateY(-50%);
         }
     }
+    @include desktop{
+        margin: 0;
+    }
     @include pad {
         .pay_left {
+            position: relative;
             &::after {
                 content: '';
                 display: block;
